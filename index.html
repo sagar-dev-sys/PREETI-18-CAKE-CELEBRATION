@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFF8EE">
+  <meta name="description" content="A dreamy birthday celebration made especially for Preeti's 18th birthday.">
+  <title>For Preeti, With Love</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <span class="balloon balloon-one"></span>
+    <span class="balloon balloon-two"></span>
+    <span class="balloon balloon-three"></span>
+    <span class="balloon balloon-four"></span>
+    <span class="sparkle sparkle-one">✦</span>
+    <span class="sparkle sparkle-two">✧</span>
+    <span class="sparkle sparkle-three">✦</span>
+    <span class="sparkle sparkle-four">✧</span>
+    <span class="sparkle sparkle-five">✦</span>
+  </div>
+
+  <nav class="preview-toolbar" id="preview-toolbar" aria-label="Birthday preview navigation" hidden>
+    <span class="preview-label">PREVIEW</span>
+    <span class="preview-step" id="preview-step">1 / 4</span>
+    <button class="preview-arrow" id="preview-previous" type="button" aria-label="Previous scene" title="Previous scene">‹</button>
+    <button class="preview-arrow" id="preview-next" type="button" aria-label="Next scene" title="Next scene">›</button>
+  </nav>
+  <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" aria-label="Turn birthday sounds on">
+    <span class="sound-icon" aria-hidden="true">♪</span><span id="sound-label">Sound off</span>
+  </button>
+  <main id="experience" class="experience">
+    <section class="scene scene-countdown is-active" id="scene-countdown" aria-labelledby="countdown-title">
+      <div class="countdown-content">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> A little magic is on its way</p>
+        <h1 id="countdown-title">Something Beautiful<br>Is About To Begin<span class="blue-period">.</span></h1>
+        <p class="scene-subtitle">Preeti's 18th Birthday Celebration</p>
+        <div class="countdown" aria-label="Time remaining until Preeti's birthday">
+          <div class="time-unit"><span id="days">00</span><small>days</small></div>
+          <span class="time-separator">:</span>
+          <div class="time-unit"><span id="hours">00</span><small>hours</small></div>
+          <span class="time-separator">:</span>
+          <div class="time-unit"><span id="minutes">00</span><small>minutes</small></div>
+          <span class="time-separator">:</span>
+          <div class="time-unit"><span id="seconds">00</span><small>seconds</small></div>
+        </div>
+        <p class="countdown-note">The celebration begins at midnight, India time</p>
+      </div>
+      <div class="countdown-orbit" aria-hidden="true"><span>18</span><i>✦</i></div>
+    </section>
+
+    <section class="scene scene-calendar" id="scene-calendar" aria-labelledby="calendar-title" hidden>
+      <div class="calendar-card" id="calendar-card">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> The moment we have been waiting for</p>
+        <h1 id="calendar-title">November <span>2026</span></h1>
+        <div class="calendar-grid" id="calendar-grid" aria-label="November 2026 calendar"></div>
+        <p class="calendar-message">18 November... The day is finally here. <span aria-hidden="true">💗</span></p>
+      </div>
+    </section>
+
+    <section class="scene scene-welcome" id="scene-welcome" aria-labelledby="welcome-title" hidden>
+      <div class="welcome-confetti" aria-hidden="true"></div>
+      <p class="eyebrow"><span class="eyebrow-dot"></span> Today is all yours</p>
+      <div class="welcome-number" aria-hidden="true">18</div>
+      <h1 id="welcome-title">Happy 18th Birthday,<br><span>Preeti!</span> <span class="title-sparkle" aria-hidden="true">✦</span></h1>
+      <p class="scene-subtitle">Finally, your special day is here.<br>Today is all about you!</p>
+      <button class="button button-primary" id="enter-wonderland-from-welcome" type="button">Enter Your Little Wonderland <span aria-hidden="true">✦</span></button>
+    </section>
+
+    <section class="scene scene-wonderland" id="scene-wonderland" aria-labelledby="wonderland-title" hidden>
+      <div class="wonderland-heading">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> A little place made just for you</p>
+        <h1 id="wonderland-title">Preeti's Little<br><span>Wonderland</span></h1>
+        <p class="scene-subtitle">Three little moments of birthday magic. Explore whichever calls to you.</p>
+      </div>
+
+      <div class="wonderland-grid">
+        <article class="wonderland-experience wish-experience" aria-labelledby="jar-title">
+          <div class="experience-title"><span class="experience-number">01</span><div><h2 id="jar-title">The Wish Jar</h2><p>Pip brought you a jar full of kind wishes.</p></div></div>
+          <div class="jar-stage">
+            <svg class="companion companion-pip" viewBox="0 0 120 130" role="img" aria-label="Pip, a little lavender star helper, waves beside the jar">
+              <path class="companion-arm wave-arm" d="M83 69 Q108 54 102 34" fill="none" stroke="#805D89" stroke-width="9" stroke-linecap="round"/>
+              <path d="M60 17 70 40 95 43 77 60 82 84 60 72 38 84 43 60 25 43 50 40z" fill="#DCCCF5" stroke="#B99DCA" stroke-width="3"/>
+              <ellipse cx="53" cy="53" rx="4" ry="6" fill="#56365F"/><ellipse cx="68" cy="53" rx="4" ry="6" fill="#56365F"/>
+              <path d="M54 63 Q60 69 67 63" fill="none" stroke="#E98BAA" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="45" cy="61" r="4" fill="#F7C8D5"/><circle cx="75" cy="61" r="4" fill="#F7C8D5"/>
+              <path d="M43 85 39 112M76 85 81 112" stroke="#805D89" stroke-width="7" stroke-linecap="round"/>
+              <path d="M94 26 98 18M105 41 114 39" stroke="#D8B779" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <div class="jar-object" id="jar-object">
+              <button class="jar-button" id="wish-jar" type="button" aria-label="Open the wish jar and reveal a birthday note">
+                <span class="jar-lid"><span></span></span>
+                <span class="jar-glass">
+                  <span class="jar-glint"></span>
+                  <span class="jar-star jar-star-one">✦</span><span class="jar-star jar-star-two">✧</span><span class="jar-star jar-star-three">✦</span>
+                  <span class="folded-note">♡</span>
+                </span>
+              </button>
+              <div class="jar-note" id="jar-note" aria-live="polite" hidden><span aria-hidden="true">✦</span><p id="jar-message"></p></div>
+            </div>
+          </div>
+          <p class="experience-hint" id="jar-hint">Tap the jar to open a little wish.</p>
+          <button class="wonderland-action" id="another-wish" type="button" hidden>Read another wish <span aria-hidden="true">↻</span></button>
+        </article>
+
+        <article class="wonderland-experience star-experience" aria-labelledby="stars-title">
+          <div class="experience-title"><span class="experience-number">02</span><div><h2 id="stars-title">The Starry Sky</h2><p>Teddy found eighteen little reminders for you.</p></div></div>
+          <div class="teddy-scene">
+            <svg class="companion companion-teddy" viewBox="0 0 130 140" role="img" aria-label="Teddy, a champagne-colored bear with a little birthday present">
+              <path d="M38 43 Q22 17 42 21 Q57 23 54 44M75 44 Q73 22 91 23 Q108 25 89 51" fill="#D8B779" stroke="#A98A4F" stroke-width="4"/>
+              <ellipse cx="64" cy="53" rx="37" ry="34" fill="#E7D29F" stroke="#A98A4F" stroke-width="4"/>
+              <ellipse cx="64" cy="65" rx="18" ry="13" fill="#FFF8EE"/>
+              <circle cx="52" cy="52" r="4" fill="#56365F"/><circle cx="76" cy="52" r="4" fill="#56365F"/>
+              <ellipse cx="64" cy="63" rx="5" ry="4" fill="#56365F"/><path d="M59 69 Q64 74 70 69" fill="none" stroke="#E98BAA" stroke-width="3" stroke-linecap="round"/>
+              <ellipse cx="64" cy="106" rx="30" ry="29" fill="#E7D29F" stroke="#A98A4F" stroke-width="4"/>
+              <ellipse cx="64" cy="108" rx="17" ry="19" fill="#FFF8EE"/>
+              <path class="companion-arm wave-arm" d="M36 91 Q17 82 21 66" fill="none" stroke="#D8B779" stroke-width="12" stroke-linecap="round"/>
+              <rect x="77" y="91" width="29" height="25" rx="4" fill="#F7C8D5" stroke="#E98BAA" stroke-width="3"/><path d="M91 91v25M77 101h29" stroke="#D8B779" stroke-width="4"/><path d="M91 91c-12-11-18 2 0 4 14-11 20 2 0 4" fill="none" stroke="#E98BAA" stroke-width="3"/>
+            </svg>
+          </div>
+          <div class="starry-stage" aria-label="Eighteen glowing stars, each with a personal compliment">
+            <div class="starfield" id="starfield"></div>
+          </div>
+          <p class="star-message" id="star-message" aria-live="polite">Choose any star for a little reminder.</p>
+        </article>
+
+        <article class="wonderland-experience mirror-experience" aria-labelledby="mirror-title">
+          <div class="experience-title"><span class="experience-number">03</span><div><h2 id="mirror-title">The Birthday Mirror</h2><p>Bunny saved a little message just for you.</p></div></div>
+          <div class="bunny-scene">
+            <svg class="companion companion-bunny" viewBox="0 0 130 150" role="img" aria-label="A little ivory bunny holding a blush balloon">
+              <path d="M48 53 Q23 8 41 11 Q58 15 61 49M72 50 Q75 8 92 15 Q108 23 82 58" fill="#FFF8EE" stroke="#D8B779" stroke-width="4"/>
+              <path d="M43 34Q48 42 54 45M84 43Q91 35 96 30" fill="none" stroke="#F7C8D5" stroke-width="7" stroke-linecap="round"/>
+              <ellipse cx="65" cy="68" rx="35" ry="31" fill="#FFF8EE" stroke="#D8B779" stroke-width="4"/>
+              <circle cx="54" cy="66" r="4" fill="#56365F"/><circle cx="75" cy="66" r="4" fill="#56365F"/><path d="M62 73 Q65 78 69 73" fill="none" stroke="#E98BAA" stroke-width="3" stroke-linecap="round"/>
+              <ellipse cx="65" cy="113" rx="28" ry="30" fill="#FFF8EE" stroke="#D8B779" stroke-width="4"/><ellipse cx="65" cy="112" rx="14" ry="18" fill="#F7C8D5"/>
+              <path class="companion-arm wave-arm" d="M39 99 Q20 90 23 74" fill="none" stroke="#FFF8EE" stroke-width="12" stroke-linecap="round"/>
+              <path d="M98 82v-30" stroke="#D8B779" stroke-width="2"/><ellipse class="bunny-balloon" cx="99" cy="42" rx="13" ry="17" fill="#F7C8D5" stroke="#E98BAA" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="mirror-stage">
+            <button class="mirror-button" id="mirror-button" type="button" aria-expanded="false" aria-label="Tap to light the birthday mirror and reveal your message">
+              <span class="mirror-ornament mirror-ornament-top" aria-hidden="true">✦</span>
+              <span class="mirror-frame"><span class="mirror-glass"><span class="mirror-glint" aria-hidden="true"></span><span class="mirror-prompt" id="mirror-prompt">For Preeti,<br>with love</span><span class="mirror-message" id="mirror-message" hidden>Today, the world celebrates another beautiful chapter of your life. Never forget how special your existence is. Keep smiling, keep growing and keep shining.</span></span></span>
+              <span class="mirror-ornament mirror-ornament-bottom" aria-hidden="true">✿</span>
+            </button>
+          </div>
+          <p class="experience-hint" id="mirror-hint">Tap the mirror to see your birthday message.</p>
+        </article>
+      </div>
+
+      <div class="companion-party" id="companion-party" hidden>
+        <svg class="companion companion-penguin party-penguin" viewBox="0 0 110 140" role="img" aria-label="A little penguin cheers in a lavender birthday hat">
+          <path d="M28 52Q23 19 55 18Q87 19 82 52L91 103Q91 128 55 130Q19 128 19 103z" fill="#56365F"/>
+          <ellipse cx="55" cy="84" rx="24" ry="34" fill="#FFF8EE"/>
+          <path d="M43 22 54 0 67 24z" fill="#DCCCF5" stroke="#D8B779" stroke-width="3"/><circle cx="55" cy="4" r="5" fill="#E98BAA"/>
+          <circle cx="44" cy="49" r="4" fill="#FFF8EE"/><circle cx="66" cy="49" r="4" fill="#FFF8EE"/><path d="M50 58 61 58 55 66z" fill="#D8B779"/>
+          <path d="M33 126 27 134M75 126 82 134" stroke="#D8B779" stroke-width="7" stroke-linecap="round"/><path class="companion-arm wave-arm" d="M25 75 8 61" stroke="#56365F" stroke-width="10" stroke-linecap="round"/>
+        </svg>
+        <p>Your little companions are cheering you on. Keep exploring, or head back to your cake whenever you're ready.</p>
+      </div>
+      <button class="button button-primary wonderland-return" id="return-to-cake" type="button">Back to Your Birthday Cake <span aria-hidden="true">♡</span></button>
+    </section>
+
+    <section class="scene scene-cake" id="scene-cake" aria-labelledby="cake-title" hidden>
+      <p class="eyebrow"><span class="eyebrow-dot"></span> Made with a little extra love</p>
+      <h1 id="cake-title">Happy 18th Birthday,<br><span>Preeti!</span></h1>
+      <p class="scene-subtitle">Your lavender cake is ready. This beautiful day is all yours.</p>
+      <p class="cake-display-note">Your birthday cake is waiting, just for you. ✨</p>
+      <button class="gift-access" id="open-wonderland-from-cake" type="button">Step Into Your Little Wonderland <span aria-hidden="true">✦</span></button>
+      <div class="cake-stage" id="cake-stage">
+        <div class="cake-glow" aria-hidden="true"></div>
+        <div class="cake-rotator" id="cake-rotator">
+        <div class="cake-art" id="cake-art" aria-label="A three-tier lavender and ivory birthday cake with 18 candles">
+          <svg class="cake-svg" viewBox="0 0 700 510" role="img" aria-labelledby="cake-svg-title">
+            <title id="cake-svg-title">Three-tier birthday cake decorated with lavender frosting, blush flowers and gold details</title>
+            <defs>
+              <linearGradient id="cake-tier-side" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#FFF8EE"/><stop offset=".12" stop-color="#EDE2F3"/><stop offset=".42" stop-color="#DCCCF5"/><stop offset=".76" stop-color="#C4AED8"/><stop offset="1" stop-color="#9579A4"/>
+              </linearGradient>
+              <linearGradient id="cake-tier-upper" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#FFF8EE"/><stop offset=".16" stop-color="#E8DDF2"/><stop offset=".52" stop-color="#D4C1E8"/><stop offset=".86" stop-color="#B99DCA"/><stop offset="1" stop-color="#8A6B99"/>
+              </linearGradient>
+              <radialGradient id="cake-frosting-top" cx="34%" cy="23%" r="78%">
+                <stop offset="0" stop-color="#FFFFFF"/><stop offset=".56" stop-color="#FFF8EE"/><stop offset="1" stop-color="#D8C8E8"/>
+              </radialGradient>
+              <radialGradient id="cake-cream-top" cx="35%" cy="20%" r="82%">
+                <stop offset="0" stop-color="#FFFFFF"/><stop offset=".68" stop-color="#FFF8EE"/><stop offset="1" stop-color="#E9DDF0"/>
+              </radialGradient>
+              <linearGradient id="cake-icing" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#FCE3EA"/><stop offset=".5" stop-color="#F7C8D5"/><stop offset="1" stop-color="#E98BAA"/>
+              </linearGradient>
+              <linearGradient id="cake-stand" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#FFF8EE"/><stop offset=".38" stop-color="#E8DDF2"/><stop offset="1" stop-color="#B99DCA"/>
+              </linearGradient>
+            </defs>
+            <ellipse cx="350" cy="456" rx="268" ry="28" fill="#56365F" opacity=".12" filter="blur(12px)"/>
+            <path d="M113 409h474l-23 42H136z" fill="url(#cake-stand)" stroke="#D8B779" stroke-width="4"/>
+            <path d="M132 417h436" stroke="#FFFFFF" stroke-opacity=".9" stroke-width="5" stroke-linecap="round"/>
+            <ellipse cx="350" cy="409" rx="237" ry="27" fill="url(#cake-cream-top)" stroke="#D8B779" stroke-width="4"/>
+            <ellipse cx="350" cy="440" rx="218" ry="17" fill="#B99DCA" opacity=".72"/>
+            <path d="M166 302H534C542 302 548 311 548 320V386C548 399 531 410 512 410H188C169 410 152 399 152 386V320C152 311 158 302 166 302Z" fill="url(#cake-tier-side)" stroke="#B99DCA" stroke-width="4"/>
+            <path d="M166 315C162 330 162 370 165 386" fill="none" stroke="#FFFFFF" stroke-opacity=".72" stroke-width="8" stroke-linecap="round"/>
+            <path d="M535 321C539 342 539 369 535 385" fill="none" stroke="#56365F" stroke-opacity=".15" stroke-width="12" stroke-linecap="round"/>
+            <ellipse cx="350" cy="302" rx="198" ry="37" fill="url(#cake-frosting-top)" stroke="#B99DCA" stroke-width="4"/>
+            <path d="M152 331c24 20 47-20 72 0s47 20 72 0 48-20 73 0 48 20 73 0 48-20 73 0 36 7 55-1v22c-19 8-36 1-55-1-25-20-48 20-73 0s-48-20-73 0-48 20-73 0-48-20-72 0-48 20-72 0z" fill="url(#cake-icing)"/>
+            <path d="M152 366c23 18 47-19 72 0s48 19 72 0 48-19 73 0 48 19 73 0 48-19 73 0 37 7 55-1v44H152z" fill="url(#cake-tier-side)"/>
+            <path d="M160 398h380" stroke="#FFFFFF" stroke-opacity=".52" stroke-width="4" stroke-linecap="round"/>
+            <path d="M232 208H468C475 208 480 216 480 225V279C480 292 462 302 448 302H252C238 302 220 292 220 279V225C220 216 225 208 232 208Z" fill="url(#cake-tier-upper)" stroke="#D8B779" stroke-width="4"/>
+            <path d="M232 220C229 235 229 263 232 278" fill="none" stroke="#FFFFFF" stroke-opacity=".72" stroke-width="7" stroke-linecap="round"/>
+            <path d="M467 222C471 241 471 262 467 279" fill="none" stroke="#56365F" stroke-opacity=".16" stroke-width="10" stroke-linecap="round"/>
+            <ellipse cx="350" cy="208" rx="130" ry="29" fill="url(#cake-cream-top)" stroke="#D8B779" stroke-width="4"/>
+            <path d="M220 234c17 15 32-15 49 0s33 15 49 0 33-15 49 0 33 15 49 0 33-15 49 0 25 6 35 0v22c-12 6-24 0-35 0-16-15-32 15-49 0s-32-15-49 0-33 15-49 0-33-15-49 0-33 15-49 0z" fill="url(#cake-icing)"/>
+            <path d="M220 263c17 14 32-14 49 0s33 14 49 0 33-14 49 0 33 14 49 0 33-14 49 0 25 5 35 0v39H220z" fill="#E9DDF0"/>
+            <path d="M280 128H420C424 128 427 132 427 137V185C427 198 413 208 400 208H300C287 208 273 198 273 185V137C273 132 276 128 280 128Z" fill="url(#cake-tier-side)" stroke="#D8B779" stroke-width="4"/>
+            <path d="M282 140C279 153 279 174 282 185" fill="none" stroke="#FFFFFF" stroke-opacity=".74" stroke-width="6" stroke-linecap="round"/>
+            <path d="M418 141C421 156 421 175 418 185" fill="none" stroke="#56365F" stroke-opacity=".15" stroke-width="8" stroke-linecap="round"/>
+            <ellipse cx="350" cy="128" rx="77" ry="22" fill="url(#cake-frosting-top)" stroke="#D8B779" stroke-width="4"/>
+            <path d="M273 151c12 12 22-12 34 0s22 12 34 0 22-12 34 0 22 12 34 0 20 8 18 0v21c-8 8-14 0-18 0-12-12-22 12-34 0s-22-12-34 0-22 12-34 0-22-12-34 0-22 12-34 0z" fill="#F7C8D5"/>
+            <path d="M273 178c12 11 22-11 34 0s22 11 34 0 22-11 34 0 22 11 34 0 18 6 18 0v30H273z" fill="#FFF8EE"/>
+            <g fill="#F7C8D5" stroke="#E98BAA" stroke-width="2">
+              <circle cx="246" cy="340" r="8"/><circle cx="239" cy="333" r="6"/><circle cx="253" cy="333" r="6"/><circle cx="239" cy="347" r="6"/><circle cx="253" cy="347" r="6"/>
+              <circle cx="450" cy="375" r="8"/><circle cx="443" cy="368" r="6"/><circle cx="457" cy="368" r="6"/><circle cx="443" cy="382" r="6"/><circle cx="457" cy="382" r="6"/>
+              <circle cx="311" cy="275" r="7"/><circle cx="305" cy="269" r="5"/><circle cx="317" cy="269" r="5"/><circle cx="305" cy="281" r="5"/><circle cx="317" cy="281" r="5"/>
+              <circle cx="401" cy="177" r="6"/><circle cx="396" cy="172" r="4"/><circle cx="406" cy="172" r="4"/><circle cx="396" cy="182" r="4"/><circle cx="406" cy="182" r="4"/>
+            </g>
+            <g fill="#D8B779" opacity=".9"><circle cx="203" cy="376" r="4"/><circle cx="294" cy="375" r="4"/><circle cx="486" cy="338" r="4"/><circle cx="273" cy="180" r="4"/><circle cx="429" cy="276" r="4"/><circle cx="470" cy="391" r="4"/></g>
+          </svg>
+          <div class="candle-layer" id="candle-layer" aria-label="18 individually tappable candles"></div>
+          <div class="cake-slice" id="cake-slice" aria-hidden="true"><span class="slice-top"></span><span class="slice-cream"></span><span class="slice-base"></span><span class="slice-berry">✿</span></div>
+          <svg class="cut-overlay" id="cut-overlay" viewBox="0 0 700 510" aria-hidden="true">
+            <path class="cut-shadow" id="cut-shadow"></path>
+            <path class="cut-cream" id="cut-cream"></path>
+          </svg>
+        </div>
+        </div>
+        <div class="cake-cut-confetti" aria-hidden="true"></div>
+        <div class="knife" id="cake-knife" role="img" aria-label="Decorative cake knife. Hold and drag it across the cake to cut." aria-disabled="true" tabindex="-1"><span class="knife-handle"></span><span class="knife-blade"></span></div>
+        <div class="cake-plate" aria-hidden="true"><span></span></div>
+        <div class="cake-companion" id="cake-companion" aria-hidden="true">
+          <svg viewBox="0 0 110 140">
+            <path d="M28 52Q23 19 55 18Q87 19 82 52L91 103Q91 128 55 130Q19 128 19 103z" fill="#56365F"/>
+            <ellipse cx="55" cy="84" rx="24" ry="34" fill="#FFF8EE"/>
+            <path d="M43 22 54 0 67 24z" fill="#DCCCF5" stroke="#D8B779" stroke-width="3"/><circle cx="55" cy="4" r="5" fill="#E98BAA"/>
+            <circle cx="44" cy="49" r="4" fill="#FFF8EE"/><circle cx="66" cy="49" r="4" fill="#FFF8EE"/><path d="M50 58 61 58 55 66z" fill="#D8B779"/>
+            <path d="M33 126 27 134M75 126 82 134" stroke="#D8B779" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="wish-copy" id="wish-copy">
+        <p>Close your eyes, make a wish,<br>and let your heart choose something beautiful.</p>
+        <button class="button button-primary" id="blow-candles" type="button">Blow All Candles <span aria-hidden="true">✧</span></button>
+      </div>
+      <div class="cake-next" id="cake-next" hidden>
+        <p class="wish-result">May all your beautiful wishes come true! <span aria-hidden="true">♡</span></p>
+        <p class="cut-prompt">Ready to cut your cake?</p>
+        <button class="button button-primary" id="start-cut" type="button">Let's Cut the Cake! <span aria-hidden="true">✦</span></button>
+      </div>
+      <div class="cut-controls" id="cut-controls" hidden>
+        <p class="cut-instruction">Now it's your turn! Hold the knife and cut your birthday cake. 🎂</p>
+        <p class="cut-feedback" id="cut-feedback" aria-live="polite" hidden>That cut was a little short. Try again or reset the cut.</p>
+        <button class="button button-secondary" id="reset-cut" type="button" hidden>Reset Cut <span aria-hidden="true">↺</span></button>
+      </div>
+      <div class="cut-done" id="cut-done" hidden>
+        <p class="cut-success">YOU DID IT, PREETI! <span aria-hidden="true">💙</span></p>
+        <p class="cut-success-detail">Your 18th birthday cake is officially cut!</p>
+        <button class="button button-primary" id="celebrate" type="button">Celebrate! <span aria-hidden="true">✦</span></button>
+      </div>
+    </section>
+
+    <section class="scene scene-final" id="scene-final" aria-labelledby="final-title" hidden>
+      <div class="final-confetti" aria-hidden="true"></div>
+      <p class="eyebrow"><span class="eyebrow-dot"></span> A brand new chapter begins</p>
+      <div class="final-cake" aria-hidden="true">🎂</div>
+      <h1 id="final-title">Happy 18th Birthday,<br><span>Preeti!</span></h1>
+      <p class="final-message">May this new chapter bring you beautiful memories, endless happiness, new opportunities and everything your heart wishes for.<br><br>Keep smiling, keep shining and enjoy every little moment.<br><br>You deserve all the happiness in the world. <span aria-hidden="true">♡</span></p>
+      <button class="button button-primary final-button" id="second-surprise" type="button">One More Surprise Is Waiting For You <span aria-hidden="true">♡</span></button>
+      <p class="final-footnote">A little more birthday love is just ahead.</p>
+    </section>
+  </main>
+  <div class="heart-gateway" id="heart-gateway" aria-hidden="true" hidden>♥</div>
+  <footer class="site-footer"><span>MADE FOR PREETI</span><span class="footer-star" aria-hidden="true">✦</span><span>18 . 11 . 2026</span></footer>
+</body>
+</html>

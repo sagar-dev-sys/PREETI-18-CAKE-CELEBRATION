@@ -1,0 +1,21 @@
+PREETI'S 18TH BIRTHDAY CELEBRATION — FINAL PACKAGE
+
+FILES
+- index.html: all scenes and page structure
+- style.css: responsive design and animations
+- script.js: countdown, calendar, interactions, candles, cake cutting and final link
+- README.md: local preview and publishing instructions
+
+QUICK TEST
+1. Extract this ZIP into a new folder.
+2. Open index.html in Chrome.
+3. To preview scenes immediately, open index.html?preview=1 in a browser.
+4. Use the PREVIEW arrows to move between scenes.
+
+IMPORTANT
+- The countdown is set for 18 November 2026 at 12:00 AM India time.
+- The cake is stationary; it does not spin or respond to drag rotation.
+- Candle tapping, the blow-candles button, draggable cake knife, optional synthesized tones, and Wonderland interactions are included.
+- The final surprise button opens the existing PREETI-BIRTHDAY-WORLD website in a new tab.
+- No MP3/WAV files, external fonts, CDNs, frameworks, or remote assets are required.
+- Keep your original folder as a backup before replacing anything in GitHub Pages.
