@@ -529,13 +529,24 @@ document.getElementById('blow-candles').addEventListener('click', () => {
   });
 });
 
-document.getElementById('start-cut').addEventListener('click', () => {
-  document.getElementById('cake-next').hidden = true;
-  document.getElementById('cut-controls').hidden = false;
-  document.getElementById('wish-copy').hidden = true;
-  window.setTimeout(() => {
-    if (currentScene === 'cake') setKnifeEnabled(true);
-  }, 220);
+document.getElementById('start-cut').addEventListener('click', (event) => {
+  event.preventDefault();
+  const next = document.getElementById('cake-next');
+  const controls = document.getElementById('cut-controls');
+  const wish = document.getElementById('wish-copy');
+
+  // Reveal the cutting instructions immediately; don't rely on a delayed
+  // callback for the tap to register on mobile browsers.
+  next.hidden = true;
+  wish.hidden = true;
+  controls.hidden = false;
+  setKnifeEnabled(true);
+
+  // Re-apply after layout so the knife can receive touch/pointer input.
+  requestAnimationFrame(() => {
+    if (currentScene === 'cake' && !state.cut) setKnifeEnabled(true);
+    controls.scrollIntoView({ behavior: REDUCED_MOTION ? 'auto' : 'smooth', block: 'nearest' });
+  });
 });
 
 document.getElementById('celebrate').addEventListener('click', () => {
